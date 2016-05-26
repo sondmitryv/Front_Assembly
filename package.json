@@ -1,8 +1,8 @@
 {
-  "name": "FrontendSkeleton",
-  "version": "0.0.1",
+  "name": "Front_Assembly",
+  "version": "1.0.0",
   "description": "Скелет вёрстки Stylus",
-  "author": "Rhinodontypicus",
+  "author": "sondmitryv",
   "dependencies": {
     "autoprefixer": "^6.3.3",
     "autoprefixer-core": "^6.0.1",
@@ -35,7 +35,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Intraweb007/FrontendSkeleton.git"
+    "url": "https://github.com/sondmitryv/Front_Assembly.git"
   },
   "devDependencies": {
     "gulp-cached": "^1.1.0"
