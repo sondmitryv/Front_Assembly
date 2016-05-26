@@ -1,0 +1,44 @@
+{
+    "fileinclude": {
+        "paths": ["./src/html/*.html", "!./src/html/includes/*.html"],
+        "basePath": "./src/html/includes",
+        "resultPath": "./production"
+    },
+    "stylus": {
+        "buildPath": "./src/stylus/build.styl",
+        "buildCompilePath": "./production/css"
+    },
+
+    "minify": {
+        "path": "./production/css/build.css",
+        "resultPath": "./production/css-min"
+    },
+    "fonts": {
+        "path": "./src/fonts/**/*.*",
+        "resultPath": "./production/fonts"
+    },
+    "compress": {
+        "path": "./src/js/main.js",
+        "resultPath": "./production/js"
+    },
+    "minifyJs": {
+        "path": "./production/js/main.js",
+        "resultPath": "./production/js-min"
+    },
+    "imgMin": {
+        "path": "./src/images/**/*",
+        "resultPath": "./production/images"
+    },
+
+
+    "watch": {
+        "img": "./src/images/**/*",
+        "minify": "./src/stylus/**/*.styl",
+        "jsMin": "./src/js/**/*.js",
+        "fonts": "./src/fonts/**/*",
+        "buildCss": "./production/css/build.css",
+        "buildJs": "./production/js/build.js",
+        "fileinclude": "./src/html/**/*.html"
+       
+    }
+}

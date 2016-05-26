@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.js"],"names":["myskill","console","log","mysskill"],"mappings":"AAAA,YAEA,IAAIA,SAAU,CACdC,SAAQC,IAAIC","file":"main.js","sourcesContent":["\"use strict\";\n\nvar myskill = 2;\nconsole.log(mysskill);"],"sourceRoot":"/source/"}
