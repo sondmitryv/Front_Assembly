@@ -31,8 +31,8 @@
     "imagemin-pngquant": "^5.0.0",
     "imagemin-svgo": "^5.2.0",
     "lost": "^6.7.2",
-    "poststylus": "^0.2.3",
-    "rupture": "^0.6.1"
+    "poststylus": "^0.2.3"
+  
   },
   "license": "MIT",
   "repository": {
