@@ -4,8 +4,8 @@
         "basePath": "./src/html/includes",
         "resultPath": "./production"
     },
-    "stylus": {
-        "buildPath": "./src/stylus/build.styl",
+    "sass": {
+        "buildPath": "./src/scss/build.scss",
         "buildCompilePath": "./production/css"
     },
 
@@ -33,7 +33,7 @@
 
     "watch": {
         "img": "./src/images/**/*",
-        "minify": "./src/stylus/**/*.styl",
+        "minify": "./src/scss/**/*.scss",
         "jsMin": "./src/js/**/*.js",
         "fonts": "./src/fonts/**/*",
         "buildCss": "./production/css/build.css",

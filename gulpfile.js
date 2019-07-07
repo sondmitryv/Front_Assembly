@@ -5,7 +5,7 @@ const gulp = require('gulp'),
         DEBUG: false,
         pattern: ['*'],
         rename: {
-            'gulp-stylus': 'stylus',
+            'gulp-sass': 'sass',
             'gulp-sourcemaps': 'sourcemaps',
             'gulp-plumber': 'plumber',
             'gulp-file-include': 'fileinclude',
@@ -17,7 +17,8 @@ const gulp = require('gulp'),
             'gulp-webp': 'webp',
             'imagemin-pngquant': 'png',
             'imagemin-jpegtran': 'jpg',
-            'gulp-babel': 'babel'
+            'gulp-babel': 'babel',
+            'postcss-scss':'postcssSass',
         }
     });
 
@@ -25,21 +26,15 @@ function getTask(task) {
     return require('./gulp-task/' + task)(gulp, plugins, helpers);
 }
 gulp.task('img:imagemin', getTask('img-imagemin'));
-
-gulp.task('css:stylus', getTask('css-stylus'));
-gulp.task('css:minify', ['css:stylus', 'img:imagemin'], getTask('css-minify'));
-
+gulp.task('css:sass', getTask('css-sass'));
+gulp.task('css:minify', ['css:sass', 'img:imagemin'], getTask('css-minify'));
 gulp.task('fileinclude', getTask('fileinclude'));
-
 gulp.task('js:app:compress', getTask('js-app-compress'));
 gulp.task('js:app:minify', ['js:app:compress'], getTask('js-app-minify'));
-
 gulp.task('fonts:build', getTask('fonts'));
-
 gulp.task('watch', getTask('watch'));
-
 gulp.task('clean', function(cb) {
-    del(['dist/assets/css', 'dist/assets/js', 'dist/assets/img'], cb)
+    del(['production/css/', 'production/css-min/', 'production/js/', 'production/js-min/'], cb)
 });
 
 // Default action

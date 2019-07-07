@@ -1,2 +1,2 @@
-"use strict";var myskill=2;console.log(mysskill);
+"use strict";console.log("lol");
 //# sourceMappingURL=maps/main.js.map
